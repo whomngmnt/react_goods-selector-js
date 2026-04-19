@@ -57,16 +57,15 @@ export const App = () => {
                     -
                   </button>
                 ) : (
-                  !selectedGood && (
-                    <button
-                      data-cy="AddButton"
-                      type="button"
-                      className="button"
-                      onClick={() => setSelectedGood(good)}
-                    >
-                      +
-                    </button>
-                  )
+                  /* Тепер AddButton буде біля кожного товару, який не є вибраним */
+                  <button
+                    data-cy="AddButton"
+                    type="button"
+                    className="button"
+                    onClick={() => setSelectedGood(good)}
+                  >
+                    +
+                  </button>
                 )}
               </td>
 
